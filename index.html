@@ -1,7 +1,83 @@
-<html>
-    <head>
-        <body>
-            Hello, world!
-        </body>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment#1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #444;
+            color: #dd9898;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .main-content {
+            flex-grow: 1;
+            background-color: #884a4a;
+            margin: 0 20px;
+        }
+        .side-content {
+            flex-basis: 200px;
+            background-color: #861212;
+            padding: 10px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .main-content {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <h2>Navigation Bar</h2>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="side-content">
+            <h2>Left Side Content</h2>
+            <p>This is the left side content.</p>
+        </div>
+        
+        <div class="main-content">
+            <h2>Main Content</h2>
+            <p>This is the main content of your webpage.</p>
+        </div>
+        
+        <div class="side-content">
+            <h2>Right Side Content</h2>
+            <p>This is the right side content.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
 </html>
